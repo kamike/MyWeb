@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="Public/css/Overview/index-common.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Public/js/Overview/index-swipe.js"></script>
+    <script type="text/javascript" src="Public/js/Overview/index-zepto.js"></script>
+
+    <title>佛系---小邹</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport">
+    <!-- Mobile Devices Support @begin -->
+    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes"/> <!-- apple devices fullscreen -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <!-- Mobile Devices Support @end -->
+    <style>
+        body {
+            background: url(Public/images/Overview/index/bg.jpg) repeat-y;
+        }
+    </style>
+</head>
+
+<body onselectstart="return true;" ondragstart="return false;">
+
+<div class="index-page" style="display:block;">
+
+    <!--焦点图 开始-->
+    <div style="-webkit-transform:translate3d(0,0,0);">
+        <div id="banner_box" class="box_swipe">
+            <ul>
+                <li>
+                    <a onClick="return false;">
+                        <img src="Public/images/Overview/index/focus/1.jpg" style="width:100%;"/>
+                    </a>
+                </li>
+                <li>
+                    <a onClick="return false;">
+                        <img src="Public/images/Overview/index/focus/2.jpg" style="width:100%;"/>
+                    </a>
+                </li>
+                <li>
+                    <a onClick="return false;">
+                        <img src="Public/images/Overview/index/focus/3.jpg" style="width:100%;"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--功能连接 开始-->
+        <div id="constraint">
+            <div id="functionLink">
+                <ul>
+                    <li style="border-right:1px solid #fff;border-bottom:1px solid #fff;">
+                        <a href="PropertyOverview.html">
+                            <img src="Public/images/Overview/index/ico1.png" width="25" height="25">
+                            <p>Home</p></a></li>
+                    <li style="border-right:1px solid #fff;border-bottom:1px solid #fff;">
+                        <a href="game/Game.html">
+                            <img src="Public/images/Overview/index/ico2.png" width="25" height="25">
+                            <p>Game</p></a></li>
+                    <li style="border-bottom:1px solid #fff;">
+                        <a href="PanoramicApartment.html">
+                            <img src="Public/images/Overview/index/ico3.png" width="25" height="25">
+                            <p>Video</p></a></li>
+                    <li style="border-right:1px solid #fff;border-bottom:1px solid #fff;">
+                        <a href="CustomerService/CommunityService.html">
+                            <img src="Public/images/Overview/index/ico4.png" width="25" height="25">
+                            <p>Music</p></a></li>
+                    <li style="border-right:1px solid #fff;border-bottom:1px solid #fff;">
+                        <a href="CustomerService/Message.html">
+                            <img src="Public/images/Overview/index/ico5.png" width="25" height="25">
+                            <p>Photos</p></a></li>
+                    <li style="border-bottom:1px solid #fff;">
+                        <a href="#">
+                            <img src="Public/images/Overview/index/ico6.png" width="25" height="25">
+                            <p>Fun</p></a></li>
+                    <li style="border-right:1px solid #fff;" >
+                        <a href="#">
+                            <img src="Public/images/Overview/index/ico7.png" width="25" height="25">
+                            <p>Ebook</p></a></li>
+                    <li style="border-right:1px solid #fff;visibility: visible">
+                        <a href="#">
+                            <img src="Public/images/Overview/index/ico8.png" width="25" height="25">
+                            <p>Others</p></a></li>
+                    <li>
+                        <a href="GroupIntroduction.html" style="visibility: collapse">
+                            <img src="Public/images/Overview/index/ico9.png" width="25" height="25">
+                            <p>Ebook</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--功能连接 结束-->
+
+    </div>
+    <!--焦点图 结束-->
+
+    <!--焦点图切换控制 开始-->
+    <script>
+        $(function () {
+            new Swipe(document.getElementById('banner_box'), {
+                speed: 500,
+                auto: 3000,
+                callback: function () {
+                    var lis = $(this.element).next("ol").children();
+                }
+            });
+        });
+    </script>
+    <!--焦点图切换控制 结束-->
+
+
+    <!--foot begin-->
+    <div id="foot">
+        <!--<img src="Public/images/StayHotel/index/foot.jpg" width="100%">-->
+        <p></p>
+    </div>
+    <!--foot end-->
+</div>
+
+
+</body>
+
+</html>

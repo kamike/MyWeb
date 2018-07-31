@@ -1,0 +1,244 @@
+
+*{padding:0; margin:0;}
+html, body{ 
+	max-width: 640px;
+	height:100%;
+	margin:0 auto;
+	
+}
+li{ list-style:none;}
+
+.index-page{
+    max-width: 640px;
+	height:100%;
+	margin:0 auto;
+    -webkit-box-sizing: border-box;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+
+
+
+/*#head ul li{
+	float:left;
+	display:block;
+	background-size:100% 100%;
+}
+#head{
+	display:block;
+	width:100%;
+	margin:0 auto;
+}
+#head ul{
+	width:100%;
+	display:block;
+}
+.head01{
+	width:30.5%;
+}
+.head02{
+	width:69.5%;
+}*/
+
+#head{
+	display:block;
+	max-width: 640px;
+	margin:0 auto;
+}
+#head a{
+	position:absolute;
+	top:1%;
+	left:75%;
+	width:20%;
+}
+
+
+/*焦点图*/
+.box_swipe{
+    overflow:hidden;
+    position:relative;
+}
+.box_swipe ul{
+    -webkit-padding-start: 0px;
+}
+img{
+	border:0;
+	margin:0;
+	display:block;
+}
+
+
+/****************************************for font template****************************************************/
+.body{
+    -webkit-box-sizing:border-box;
+}
+.body ~ foot{
+    text-align:center;
+    position:relative;
+}
+
+
+/*功能连接*/
+#functionLink{
+	position:absolute;
+	top:90%;
+	margin: 0 auto;
+	left:10%;
+	max-width:640px;
+	width:80%;
+	background:#fff;
+	background-size:100% 100%;
+	background: rgba(255, 255, 255, 0.3) !important;
+}
+#functionLink ul{
+	width:100%;
+	display:block;
+	margin: 0 auto;
+	
+}
+#functionLink ul li{
+	width:33%;
+	display:block;
+	float:left;  
+	text-align: center;
+	
+	padding-top:15px;
+	padding-bottom:15px;
+	
+}
+#functionLink ul li a{
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+}
+#functionLink ul li a img{
+	margin:0 auto;
+}
+#functionLink ul li a p{
+	font-size:13px;
+	font-weight:bold;
+	margin-top:15px;
+}
+
+.clear{
+	clear:both;
+}
+
+#constraint{
+	margin: 0 auto;
+	display:block;
+	width:100%;
+}
+
+
+
+/*foot*/
+#foot{
+	margin-bottom:0; 
+	padding:0;
+	bottom:0; 
+	position:relative; 
+	display:block; 
+	margin-top:70%; 
+	line-height:30px;
+	height:30px;
+}
+
+#foot p{/*
+	position:absolute; 
+	right:10px;*/ 
+	bottom:0; 
+	color:#FFFFFF;
+	font-size:12px;
+	margin-top:10px;
+}
+
+
+
+/*plugmenu*/
+.plug-wrap{
+    position:absolute;
+    height:100px;
+    background:rgba(0,0,0,0);
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    z-index:800;
+    display:none!important;
+}
+
+.plug-div {
+	position:fixed;
+	bottom:0;
+	left:0px;
+	z-index:900;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.plug-menu{
+	-webkit-appearance:button;
+	display:inline-block;
+	width:36px!important;
+	height:36px!important;
+	border-radius:36px;
+	position: absolute;
+	bottom:17px;
+	left: 17px;
+	z-index:999;
+	-moz-box-shadow:0 0 0 4px #FFFFFF, 0 2px 5px 4px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow:0 0 0 4px #FFFFFF, 0 2px 5px 4px rgba(0, 0, 0, 0.25);
+	box-shadow:0 0 0 4px #FFFFFF, 0 2px 5px 4px rgba(0, 0, 0, 0.25);
+	background-color: #B70000;
+	-webkit-transition: -webkit-transform 200ms;
+	-webkit-transform:rotate(1deg);
+	color:#fff;
+	background-image:url(../../images/StayHotel/index/plugmenu.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 80% auto;
+	background-size: 80% auto;
+	background-position: center center;
+}
+.plug-menu:before{
+	font-size:20px;
+	margin:9px 0 0 9px;
+}
+.plug-menu:checked{
+	-webkit-transform:rotate(135deg);
+}
+
+.plug-phone>div {
+	width:32px;
+	height:32px;
+	border-radius:32px;
+	-moz-box-shadow:0 0 0 3px #FFFFFF, 0 2px 5px 3px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow:0 0 0 3px #FFFFFF, 0 2px 5px 3px rgba(0, 0, 0, 0.25);
+	box-shadow:0 0 0 3px #FFFFFF, 0 2px 5px 3px rgba(0, 0, 0, 0.25);
+	background:#B70000;
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin-bottom:20px;
+	margin-left:20px;
+	z-index:900;
+	-webkit-transition: -webkit-transform 200ms;
+}
+.plug-phone>div a{
+	color:#fff;
+	font-size:20px;
+    display: block;
+    height: 100%;
+    line-height: 33px;
+    text-align: center;
+	margin-top:6px;
+	margin-left:6px;
+}
+
+.plug-phone>div.on:nth-of-type(1) {-webkit-transform: translate(0, -100px) rotate(720deg);}
+
+.plug-phone>div.on:nth-of-type(2) {-webkit-transform: translate(47px, -81px) rotate(720deg);}
+
+.plug-phone>div.on:nth-of-type(3) {-webkit-transform: translate(81px, -45px) rotate(720deg);}
+
+.plug-phone>div.on:nth-of-type(4) {-webkit-transform: translate(100px, 0) rotate(720deg);}
